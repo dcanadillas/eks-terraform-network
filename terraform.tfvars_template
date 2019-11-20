@@ -1,0 +1,14 @@
+region = "<your_aws_region>"
+credentials_file = "~/.aws/credentials"
+aws_profile = "<your_aws_profile>"
+
+cluster-name = "<choose_a_cluster_name>"
+worker_node_type = "m4.large" # change the type or your Worker Nodes
+num-nodes = 3 # Change to your sizing needs. This value can be used to scale down and up the cluster
+
+# Following 3 values need to be set only if "network=true"
+# network = true
+vpc_id = "<vpc-xxxxxxxxxxxxxxxxx>"
+# You need to select 2 existing subnets with different availability zones 
+subnet_id = ["subnet-xxxxxxxxxxxxxxxxx","subnet-xxxxxxxxxxxxxxxxx"]
+gateway_id = "igw-xxxxxxxxxxxxxxxxx"
