@@ -9,6 +9,12 @@ To select between two previous options you can use the variable `network` in the
 
 ## Initialize Terraform
 
+Please, change the template of `terraform.tfvars` included in this repo:
+
+```bash
+mv terraform.tfvars_template terraform.tfvars
+```
+
 You need to initialize terraform in order to apply the plan to create your EKS cluster.
 
 1. Configure your AWS credentials file (usually in `~/.aws/credentials`)
